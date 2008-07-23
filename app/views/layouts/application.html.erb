@@ -5,6 +5,7 @@
     <%= active_scaffold_includes %>
   </head>
   <body>
+    <%= %w[albums artists tracks].map { |link| link_to(link.titleize, "/#{link}") } * " | " %>
     <%= yield %>
   </body>
 </html>
