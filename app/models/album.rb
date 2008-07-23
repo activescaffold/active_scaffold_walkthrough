@@ -14,4 +14,11 @@
 #
 
 class Album < ActiveRecord::Base
+  file_column :album_cover, :magick => 
+  { :versions => 
+    {
+      :thumb => {:size => "128x128"},
+      :medium => {:size => "256x256"}
+    }
+  }
 end
