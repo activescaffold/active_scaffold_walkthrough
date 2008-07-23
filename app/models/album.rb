@@ -21,4 +21,6 @@ class Album < ActiveRecord::Base
       :medium => {:size => "256x256"}
     }
   }
+  
+  has_many :tracks, :order => "track_number"
 end

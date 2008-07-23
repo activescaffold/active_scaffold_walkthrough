@@ -14,4 +14,6 @@
 
 class Track < ActiveRecord::Base
   file_column :sample
+  
+  belongs_to :album
 end
