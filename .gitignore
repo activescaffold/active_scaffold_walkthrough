@@ -1,3 +1,4 @@
 log/*.log
 *.sqlite3
 /public/album
+/public/track

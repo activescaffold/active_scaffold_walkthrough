@@ -12,4 +12,5 @@
 #
 
 class Track < ActiveRecord::Base
+  file_column :sample
 end
