@@ -11,4 +11,5 @@
 #
 
 class Artist < ActiveRecord::Base
+  has_many :albums, :order => "release_date"
 end
