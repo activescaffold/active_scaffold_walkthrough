@@ -1,0 +1,32 @@
+h1. Walkthrough app
+
+This small application is designed to introduce a beginner to several features of active scaffold.  Each commit is very descriptive and precise to show what code was changed to perform certain actions along the way.
+
+Features demonstrated:
+* Image uploading / thumbnails
+* File uplaoding
+* Calendar pickers
+* Nested scaffolds
+* Column overrides
+* Creating a drag-drop sortable list
+
+To start:
+
+<pre>
+git clone git://github.com/activescaffold/active_scaffold_walkthrough.git
+git submodule init && git submodule update
+rake db:migrate
+
+# start iterating through commits
+./walkthrough.sh next
+
+# see details about the current commit (diff)
+./walkthrough.sh show
+
+# keep iterating
+./walkthrough.sh next
+./walkthrough.sh prev
+
+# stop
+./walkthrough.sh abort
+</pre>
